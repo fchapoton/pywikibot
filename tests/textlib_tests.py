@@ -1091,11 +1091,11 @@ class TestReplaceLinksNonDry(TestCase):
         self.assertEqual(
             textlib.replace_links(link, (':fr:how', ':de:are'),
                                   self.site),
-            '[[:de:are|fr:how]]')
+            '[[:de:Are|fr:how]]')
         self.assertEqual(
             textlib.replace_links(link, ('fr:how', 'de:are'),
                                   self.site),
-            '[[:de:are|fr:how]]')
+            '[[:de:Are|fr:how]]')
         self.assertEqual(
             textlib.replace_links(link, ('how', ':de:are'),
                                   self.site),
